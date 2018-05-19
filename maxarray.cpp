@@ -12,9 +12,8 @@ int max(int a, int b)
 }
 int func(int a[], int n)
 {
-	int l[n], m[n],i,j;
+	int l[n],i,j;
 	l[0]=a[0];
-	m[n-1]=a[n-1];
 	for(i=1;i<n;i++)
 	{
 		l[i]=min(a[i],l[i-1]);	
