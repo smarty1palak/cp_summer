@@ -14,26 +14,23 @@ int func(int a[], int n)
 {
 	int l[n], m[n],i,j;
 	l[0]=a[0];
-	m[0]=a[0];
+	m[n-1]=a[n-1];
 	for(i=1;i<n;i++)
 	{
 		l[i]=min(a[i],l[i-1]);	
 	}
-	for(j=1;i<n;i++)
-	{
-		m[i]=max(a[i],l[i-1]);	
-	}
-	i=0,j=0;
 	int diff=-1;
-	while(i<n&&j<n)
+	j=n-1;
+	i=n-1;
+	while(i>=0&&j>=0)
 	{
-		if(l[i]<=m[j])
+		if(a[j]>l[i])
 		{
-			diff=max(diff,(j-i));
-			j++;
+			 diff=max(diff,j-i);
+			 i--;
 		}
 		else
-			i++;
+			j--;
 	}
 	return diff;
 }
