@@ -1,0 +1,5 @@
+a1 = 42     // `a1` is not an identifier
+if == +4    // `==` is not assignment
+val = i     // `i` is not an integer
+a++ = 7     // `a++` is not an identifier
+cat += 2    //  `+=` is not assignment
