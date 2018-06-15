@@ -1,11 +1,5 @@
-#include<iostream>
-
-using namespace std;
-int main()
-{
-	int A;
-	cin>>A;
-	int sum=0,x=1,count=0,t=2;
+int Solution::trailingZeroes(int A) {
+    int sum=0,x=1,count=0,t=2;
     while(5*x<=A)
     {
         count++;
@@ -24,5 +18,5 @@ int main()
         }
         x++;
     }
-    cout<<count;
+    return count;
 }
