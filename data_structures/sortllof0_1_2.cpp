@@ -35,15 +35,16 @@ void createnode(int x)
 void sortlist()
 {
 	struct node *temp=header;
-	for(int i=2;i>=0;i--)
+	int i=0;
+	while(temp!=NULL)
 	{
-		for(int j=0;j<a[i];j++)
+		if(a[i]==0)
+			i++;
+		else
 		{
-			struct node *temp=new struct node ;
 			temp->data=i;
-			temp->next=header;
-			header=temp;
-			
+			temp=temp->next;
+			a[i]--;
 		}
 	}
 }
