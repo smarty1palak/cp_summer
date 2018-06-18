@@ -8,7 +8,7 @@ int calculate(int m, int n)
     {
         for(int j=n-1;j>=0;j--)
         {
-            if(i==m-1&&j==m-1)
+            if(i==m-1&&j==n-1)
             {
                 health[i][j]=max(1, 1-ma[i][j]);
             }
