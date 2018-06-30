@@ -20,7 +20,7 @@ bool attacked(int i, int j)
 	{
 		for(int l=0;l<n;l++)
 		{
-			if((k+1)==(i+j))
+			if((k+l)==(i+j))
 			{
 				if(board[k][k]==1)
 					return true;
